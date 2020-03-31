@@ -1,0 +1,15 @@
+# Nathan’s Hot-Dog Eating Contest 
+
+This includes a reconstruction of Nathan Yau’s hot dog contest example, as interpreted by Jackie Wirz, ported into R and ggplot2 by Steven Bedrick for a workshop for the OHSU Data Science Institute, and finally adapted by Alison Hill for all you intrepid Data-Viz-onauts!
+
+```{r}
+library(tidyverse)
+hot_dogs <- read_csv("http://bit.ly/cs631-hotdog", 
+    col_types = cols(
+      gender = col_factor(levels = NULL)
+    ))
+```
+
+We'll be making this plot!
+
+![](images/lab01.png)
